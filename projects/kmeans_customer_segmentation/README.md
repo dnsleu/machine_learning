@@ -40,15 +40,17 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 
 Key findings:
 - **The hypothesis tests have shown that spending differs across age groups, while it is relatively the same for income.**
-- **Using Age, Annual income (k$), and Spending score, K-means identified six distinct customer segments with clear behavioral patterns.  
-One segment consists of older, moderate-income customers with moderate spending (Cluster 0: Age ~56, Income ~54k, Score ~49).  
+- **Using Age, Annual income (k$), and Spending score, K-means identified six distinct customer segments with clear behavioral patterns.**  
+One segment consists of older, moderate-income customers with moderate spending (**Cluster 0**: Age ~56, Income ~54k, Score ~49).  
 Three segments are younger customers but split strongly by income and spending:  
-   - a high-income / high-spending group (Cluster 1: Age ~33, Income ~87k, Score ~82)  
-   - a low-income / high-spending group (Cluster 2: Age ~26, Income ~26k, Score ~76)  
-   - and a mid-income / moderate-spending group (Cluster 3: Age ~26, Income ~59k, Score ~44)  
+   - high-income / high-spending group (**Cluster 1**: Age ~33, Income ~87k, Score ~82)  
+   - low-income / high-spending group (**Cluster 2**: Age ~26, Income ~26k, Score ~76)  
+   - and a mid-income / moderate-spending group (**Cluster 3**: Age ~26, Income ~59k, Score ~44)  
+
 Two segments show low spending despite very different income levels:  
-   - high-income / low-spending group (Cluster 4: Age ~44, Income ~90k, Score ~18)  
-   - low-income / low-spending group (Cluster 5: Age ~46, Income ~26k, Score ~19)  
+   - high-income / low-spending group (**Cluster 4**: Age ~44, Income ~90k, Score ~18)  
+   - low-income / low-spending group (**Cluster 5**: Age ~46, Income ~26k, Score ~19)  
+
 Overall, the clusters suggest that spending score is not purely driven by income (e.g., low-income high spenders exist), and the most actionable contrasts are between high-income low spenders vs high-income high spenders, and low-income high spenders vs low-income low spenders.**
 - **[Finding #3]**
 
