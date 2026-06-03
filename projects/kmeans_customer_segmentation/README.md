@@ -40,7 +40,9 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 ![Davies Bouldin plot](reports/figures/db.png)
 
 ### Cluster plot (3D)
-[3D clusters](https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html)
+<a href="https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html" target="_blank" rel="noopener noreferrer">
+  3D clusters plot
+</a>
 
 Key findings:
 - **The hypothesis tests have shown that spending differs across age groups, while it is relatively the same for income.**
