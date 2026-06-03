@@ -44,7 +44,7 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 
 <a href="https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html"
    target="_blank" rel="noopener noreferrer">
-  <img src="projects/kmeans_customer_segmentation/reports/figures/3D_plot.png"
+  <img src="reports/figures/3D_plot.png"
        alt="3D clusters (interactive)" width="650">
 </a>  
 
