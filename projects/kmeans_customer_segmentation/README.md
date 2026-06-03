@@ -1,26 +1,32 @@
 # KMeans Customer Segmentation
 
 ## Overview
-Goal: segment customers into groups using K-Means clustering on **[your 3 numeric features]** to support **[business use-case: marketing, retention, pricing, etc.]**.
+The goal of this analysis is to segment the customers into groups using KMeans clustering (and other clustering methods), analyze dependencies using statistical methods to gain insights that can be used in marketing campaigns, retention efforts or pricing.
 
 ## Data
-- Source: **[where it came from / synthetic / provided file]**
+- Source: **https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python/data**
 - File: `data/raw/Mall_Customers.xlsx`
-- Features used: **[Feature A]**, **[Feature B]**, **[Feature C]**
-- Target label (optional): `Gender` (used only for visualization / sanity-check, not for training)
+- Features columns: ``Age``, ``Income``, ``Spending score``
+- Category columns: ``Gender``
 
-> Note: Raw data is stored under `data/raw`. If the dataset is sensitive or large, replace it with a download step.
+> Note: Raw data is stored under `data/raw`.
 
 ## Method
 1. Preprocessing
+   - Load and clean data
    - Select numeric features
-   - Standardize features (important for distance-based clustering)
-2. Model selection
+   - Save processed dataset
+2. Explorative data analysis (EDA) & Hypothesis testing
+   - Distributions
+   - Pairplot
+   - PCA 2D with EVR + loadings
+   - Hypothesis test (spending score dependency on age and income)
+3. Model selection
    - WCSS (elbow method) across k = 1..10
    - Multiple initializations (`n_init`) to reduce sensitivity to random centroid seeds
-3. Training
+4. Training
    - Fit KMeans with chosen k
-4. Visualization
+5. Visualization
    - Elbow plot with ΔWCSS annotations
    - 3D scatter of clusters + centroids
    - Optional: PCA 2D projection for interpretability
@@ -33,17 +39,23 @@ Goal: segment customers into groups using K-Means clustering on **[your 3 numeri
 ![3D clusters](reports/figures/clusters_3d.png)
 
 Key findings:
-- **[Finding #1]**
-- **[Finding #2]**
+- **The hypothesis tests have shown that spending differs across age groups, while it is relatively the same for income.**
+- **Using Age, Annual income (k$), and Spending score, K-means identified six distinct customer segments with clear behavioral patterns.  
+One segment consists of older, moderate-income customers with moderate spending (Cluster 0: Age ~56, Income ~54k, Score ~49).  
+Three segments are younger customers but split strongly by income and spending:  
+   - a high-income / high-spending group (Cluster 1: Age ~33, Income ~87k, Score ~82)  
+   - a low-income / high-spending group (Cluster 2: Age ~26, Income ~26k, Score ~76)  
+   - and a mid-income / moderate-spending group (Cluster 3: Age ~26, Income ~59k, Score ~44)  
+Two segments show low spending despite very different income levels:  
+   - high-income / low-spending group (Cluster 4: Age ~44, Income ~90k, Score ~18)  
+   - low-income / low-spending group (Cluster 5: Age ~46, Income ~26k, Score ~19)  
+Overall, the clusters suggest that spending score is not purely driven by income (e.g., low-income high spenders exist), and the most actionable contrasts are between high-income low spenders vs high-income high spenders, and low-income high spenders vs low-income low spenders.**
 - **[Finding #3]**
 
 ## How to run
-### Option 1: Notebook
-Open: `notebooks/[your_notebook].ipynb`
-
-### Option 2: Recreate environment
+### Recreate environment
 ```bash
+git clone https://github.com/dnsleu/machine_learning.git
 python -m venv .venv
-# Windows PowerShell
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
