@@ -33,10 +33,14 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 
 ## Results
 ### Elbow / WCSS
-![Elbow plot](reports/figures/elbow.png)
+![Elbow plot](reports/figures/elbow.png)  
+### Silhouette score
+![Silhouette score plot](reports/figures/silhouette.png)  
+### Davies Bouldin
+![Davies Bouldin plot](reports/figures/db.png)
 
 ### Final clustering (3D)
-![3D clusters](reports/figures/clusters_3d.png)
+![3D clusters](reports/figures/clusters_3d.html)
 
 Key findings:
 - **The hypothesis tests have shown that spending differs across age groups, while it is relatively the same for income.**
