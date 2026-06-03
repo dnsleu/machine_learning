@@ -40,8 +40,12 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 ![Davies Bouldin plot](reports/figures/db.png)
 
 ### Cluster plot (3D)
-<a href="https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html" target="_blank" rel="noopener noreferrer">
-  3D clusters plot
+[![🔎 3D clusters (interactive)](projects/kmeans_customer_segmentation/reports/figures/clusters_3d.png)](https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html)
+
+<a href="https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html"
+   target="_blank" rel="noopener noreferrer">
+  <img src="projects/kmeans_customer_segmentation/reports/figures/clusters_3d.png"
+       alt="3D clusters (interactive)" width="650">
 </a>
 
 Key findings:
