@@ -38,6 +38,8 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 ![Silhouette score plot](reports/figures/silhouette.png)  
 ### Davies Bouldin
 ![Davies Bouldin plot](reports/figures/db.png)
+### Calinski–Harabasz
+![Calinski–Harabasz plot](reports/figures/ch.png)
 
 ### 🔎 3D Cluster
 ➡️ **Click the thumbnail below to open the interactive plot**
