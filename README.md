@@ -1,14 +1,13 @@
 # Machine Learning Projects
 
-A growing portfolio of small machine learning / data analysis projects (mostly notebooks + reproducible code).
+My portfolio of machine learning / data analysis projects.
 
 ## Projects
 | Project | What it does | Key methods |
 |---|---|---|
-| [KMeans Customer Segmentation](projects/kmeans_customer_segmentation/) | Segment customers using 3 numeric features | KMeans, WCSS (Elbow), scaling, centroid visualization |
+| [Customer Segmentation](projects/kmeans_customer_segmentation/) | Segment customers using 3 numeric features | EDA, Hypothesis test, WCSS (Elbow), Silhouette, Davies Bouldin, Calinski–Harabasz, KMeans, DBSCAN, GMM|
 
-## How to run a project
-Each project folder contains:
+#### Each project folder contains:
 - `README.md` with setup and results
 - `requirements.txt` for reproducibility
-- `notebooks/` for the analysis
+- `notebooks` for the analysis
