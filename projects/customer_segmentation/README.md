@@ -53,9 +53,9 @@ The goal of this analysis is to segment the customers into groups using KMeans c
 
 ### 🔎 3D Cluster
 ➡️ **Click the thumbnail below to open the interactive plot**
-[![🔎 KMeans 3D clusters (interactive)](reports/figures/KMeans_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/clusters_3d.html)  
-[![🔎 DBSCAN 3D clusters (interactive)](reports/figures/DBSCAN_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/DBSCAN_clusters_3d.html)  
-[![🔎 GMM 3D clusters (interactive)](reports/figures/GMM_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/kmeans_customer_segmentation/reports/figures/GMM_clusters_3d.html)  
+[![🔎 KMeans 3D clusters (interactive)](reports/figures/KMeans_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/customer_segmentation/reports/figures/clusters_3d.html)  
+[![🔎 DBSCAN 3D clusters (interactive)](reports/figures/DBSCAN_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/customer_segmentation/reports/figures/DBSCAN_clusters_3d.html)  
+[![🔎 GMM 3D clusters (interactive)](reports/figures/GMM_3D_plot.png)](https://dnsleu.github.io/machine_learning/projects/customer_segmentation/reports/figures/GMM_clusters_3d.html)  
 
 Key findings:
 - **The hypothesis tests have shown that spending differs across age groups, while it is relatively the same for income.**
