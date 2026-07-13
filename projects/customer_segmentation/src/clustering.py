@@ -31,7 +31,7 @@ def k_distance_elbow_plot(
         # distance to the k-th neighbor for each point
         kth = distances[:, k - 1]
 
-        # sort descending (same as your approach)
+        # sort descending
         y = np.sort(kth)[::-1]
         x = np.arange(1, len(y) + 1)
 
